@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Vision</string>
+    <string name="enablebt">Enable BT</string>
+    <string name="disablebt">Disable BT</string>
+    <string name="scanbt">List devices</string>
+    <string name="measVoltage">Start</string>
+</resources>

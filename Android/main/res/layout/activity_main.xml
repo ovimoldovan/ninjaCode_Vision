@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:transitionGroup="true"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_enablebt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="on"
+        android:text="@string/enablebt" />
+
+    <Button
+        android:id="@+id/button_disablebt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:onClick="off"
+        android:text="@string/disablebt" />
+
+    <Button
+        android:id="@+id/button_scanbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="deviceList"
+        android:text="@string/scanbt"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_scanbt"
+        android:layout_marginTop="0dp" />
+
+
+</RelativeLayout>
